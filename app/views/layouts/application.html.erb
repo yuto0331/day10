@@ -9,6 +9,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <h1>Blogs</h1>
+      <%= link_to 'New Blog', new_blog_path %>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
